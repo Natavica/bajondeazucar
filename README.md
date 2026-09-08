@@ -1,4 +1,4 @@
-# VERDE & CACAO — Landing de pastelería vegana
+# BAJÓN DE AZÚCAR — Landing de pastelería vegana
 
 Prototipo frontend en HTML, CSS y JavaScript vanilla.
 
