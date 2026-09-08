@@ -17,7 +17,7 @@
   --sans: "DM Sans", Arial, sans-serif;
 }
 html { scroll-behavior: smooth; }
-body { font-family: var(--sans); color: var(--ink); background: var(--paper); line-height: 1.55; }
+body { font-family: var(--sans); color: var(--ink); background: var(--light-mint); line-height: 1.55; }
 img { display: block; width: 100%; }
 button, input { font: inherit; }
 button { cursor: pointer; }
@@ -89,18 +89,18 @@ em { color: var(--dark-blue); font-style: italic; }
 .product-price { font-weight: 800; font-size: .82rem; margin-top: 8px; }
 .empty-state { text-align: center; color: var(--muted); padding: 70px 0; }
 
-.custom-order { background: var(--mint); color: white; padding: 105px 0; }
+.custom-order { background: var(--lime); color: var(--dark-blue); padding: 105px 0; }
 .custom-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 90px; align-items: center; }
 .custom-order h2 { font-size: clamp(3rem, 5vw, 5.5rem); }
 .custom-order h2 em { color: var(--lime); }
 .custom-copy { max-width: 470px; }
-.custom-copy p { font-size: 1.05rem; color: rgba(255,255,255,.72); margin-bottom: 28px; }
+.custom-copy p { font-size: 1.05rem; color: var(--dark-blue); margin-bottom: 28px; }
 
 .catering { display: grid; grid-template-columns: 1fr 1fr; gap: 90px; align-items: center; padding-top: 140px; padding-bottom: 140px; }
 .catering-image { aspect-ratio: 1 / .95; overflow: hidden; }
 .catering-image img { height: 100%; object-fit: cover; }
 .catering-copy h2 { font-size: clamp(3rem, 5vw, 5rem); margin-bottom: 25px; }
-.catering-copy > p:not(.eyebrow) { color: var(--muted); max-width: 480px; margin-bottom: 30px; }
+.catering-copy > p:not(.eyebrow) { color: var(--dark-blue); max-width: 480px; margin-bottom: 30px; }
 .service-list { list-style: none; border-top: 1px solid var(--line); margin-bottom: 32px; }
 .service-list li { display: flex; gap: 25px; padding: 13px 0; border-bottom: 1px solid var(--line); font-weight: 600; font-size: .9rem; }
 .service-list span { color: var(--muted); font-size: .65rem; }
@@ -125,7 +125,7 @@ em { color: var(--dark-blue); font-style: italic; }
 .contact h2 em { color: var(--lime); }
 .contact-inner > p:not(.eyebrow) { color: rgba(255,255,255,.68); margin: 25px 0 32px; }
 .contact-actions { justify-content: center; }
-.footer { background: #10261c; color: white; padding: 35px 0; }
+.footer { background: var(--dark-blue); color: white; padding: 35px 0; }
 .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 25px; }
 .footer p { color: rgba(255,255,255,.5); font-size: .75rem; }
 .footer-links { display: flex; gap: 22px; font-size: .75rem; }
