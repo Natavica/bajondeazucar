@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pastelería y catering vegano artesanal. Productos dulces, salados y pedidos personalizados.">
+  <title>Bajón de azúcar — Pastelería Vegana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="site-header" id="inicio">
+    <nav class="nav container">
+      <a class="logo" href="#inicio" aria-label="Bajón de azúcar inicio">
+        <span>BAJÓN DE AZÚCAR</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+      <div class="nav-links">
+        <a href="#productos">Productos</a>
+        <a href="#pedidos">A pedido</a>
+        <a href="#catering">Catering</a>
+        <a href="#instagram">Instagram</a>
+        <a class="nav-cta" href="#contacto">Cotizar</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">PASTELERÍA · CATERING · 100% VEGETAL</p>
+        <h1>Hecho para<br><em>antojarse.</em></h1>
+        <p class="hero-text">
+          Pastelería artesanal vegana, bocados dulces y salados y creaciones a pedido para celebrar, compartir o simplemente darse un gusto.
+        </p>
+        <div class="hero-actions">
+          <a href="#productos" class="btn btn-primary">Ver productos <span>↓</span></a>
+          <a href="#contacto" class="btn btn-text">Quiero cotizar →</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1200&q=85" alt="Torta de chocolate decorada">
+        <div class="hero-badge">
+          <span>100%</span>
+          <small>VEGANO</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories container" aria-label="Categorías">
+      <button class="category-card active" data-filter="todos">
+        <span class="category-number">01</span>
+        <strong>Todo</strong>
+        <span>Ver catálogo completo</span>
+      </button>
+      <button class="category-card" data-filter="dulce">
+        <span class="category-number">02</span>
+        <strong>Dulce</strong>
+        <span>Tortas, brownies y más</span>
+      </button>
+      <button class="category-card" data-filter="salado">
+        <span class="category-number">03</span>
+        <strong>Salado</strong>
+        <span>Bocados y opciones para compartir</span>
+      </button>
+      <button class="category-card" data-filter="catering">
+        <span class="category-number">04</span>
+        <strong>Catering</strong>
+        <span>Eventos y celebraciones</span>
+      </button>
+    </section>
+
+    <section class="products-section container" id="productos">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">EL CATÁLOGO</p>
+          <h2>Algo rico<br><em>para cada ocasión.</em></h2>
+        </div>
+        <p class="section-intro">Explora nuestros productos. Haz clic en cualquiera para conocer sus ingredientes, formatos y detalles.</p>
+      </div>
+
+      <div class="catalog-toolbar">
+        <div class="filters" role="group" aria-label="Filtrar productos">
+          <button class="filter-btn active" data-filter="todos">Todos</button>
+          <button class="filter-btn" data-filter="dulce">Dulces</button>
+          <button class="filter-btn" data-filter="salado">Salados</button>
+          <button class="filter-btn" data-filter="catering">Catering</button>
+          <button class="filter-btn" data-filter="pedido">A pedido</button>
+        </div>
+        <label class="search-box">
+          <span>⌕</span>
+          <input id="searchInput" type="search" placeholder="Buscar producto..." aria-label="Buscar producto">
+        </label>
+      </div>
+
+      <div class="products-grid" id="productsGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>No encontramos productos con esa búsqueda.</p>
+    </section>
+
+    <section class="custom-order" id="pedidos">
+      <div class="custom-inner container">
+        <div>
+          <p class="eyebrow">CREACIONES PERSONALIZADAS</p>
+          <h2>¿Tienes una idea<br><em>en mente?</em></h2>
+        </div>
+        <div class="custom-copy">
+          <p>También hacemos productos a pedido. Cuéntanos qué necesitas, para cuántas personas y qué tipo de celebración tienes en mente.</p>
+          <a href="#contacto" class="btn btn-light">Cuéntame mi idea →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="catering container" id="catering">
+      <div class="catering-image">
+        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1000&q=85" alt="Selección de pastelería para catering">
+      </div>
+      <div class="catering-copy">
+        <p class="eyebrow">CATERING VEGANO</p>
+        <h2>Que tu evento<br><em>también se coma.</em></h2>
+        <p>Armamos propuestas dulces y saladas para cumpleaños, matrimonios, coffee breaks, eventos de empresa y celebraciones especiales.</p>
+
+        <ul class="service-list">
+          <li><span>01</span> Coffee breaks</li>
+          <li><span>02</span> Mesas dulces y saladas</li>
+          <li><span>03</span> Cumpleaños y celebraciones</li>
+          <li><span>04</span> Eventos corporativos</li>
+        </ul>
+
+        <a href="#contacto" class="btn btn-dark">Cotizar catering →</a>
+      </div>
+    </section>
+
+    <section class="values">
+      <div class="container values-grid">
+        <div>
+          <span class="value-icon">✦</span>
+          <h3>100% vegetal</h3>
+          <p>Todos nuestros productos son completamente veganos.</p>
+        </div>
+        <div>
+          <span class="value-icon">♡</span>
+          <h3>Artesanal</h3>
+          <p>Preparaciones hechas en pequeñas cantidades y con cariño.</p>
+        </div>
+        <div>
+          <span class="value-icon">✺</span>
+          <h3>A tu medida</h3>
+          <p>Podemos adaptar formatos y crear propuestas especiales.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="instagram container" id="instagram">
+      <div class="section-heading instagram-heading">
+        <div>
+          <p class="eyebrow">SIGAMOS EN CONTACTO</p>
+          <h2>@bajondeazucar</h2>
+        </div>
+        <a class="instagram-link" href="#" aria-label="Instagram de Bajón de azúcar">Ver Instagram ↗</a>
+      </div>
+
+      <div class="insta-grid">
+        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=80" alt="Brownies de chocolate">
+        <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=700&q=80" alt="Cupcakes decorados">
+        <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=700&q=80" alt="Torta y repostería">
+        <img src="https://images.unsplash.com/photo-1558326567-98ae2405596b?auto=format&fit=crop&w=700&q=80" alt="Pastelería artesanal">
+        <img src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=700&q=80" alt="Postre con frutas">
+        <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=700&q=80" alt="Torta de celebración">
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="container contact-inner">
+        <p class="eyebrow">HABLEMOS</p>
+        <h2>¿Qué estás<br><em>celebrando?</em></h2>
+        <p>Cuéntanos qué necesitas y te respondemos con una propuesta.</p>
+        <div class="contact-actions">
+          <a href="https://wa.me/56900000000" class="btn btn-light">WhatsApp →</a>
+          <a href="mailto:hola@bajondeazucar.cl" class="btn btn-outline-light">hola@bajondeazucar.cl</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="logo" href="#inicio"><span>BAJÓN DE AZÚCAR</span></a>
+      <p>Pastelería & catering 100% vegetal.</p>
+      <div class="footer-links">
+        <a href="#productos">Productos</a>
+        <a href="#catering">Catering</a>
+        <a href="#instagram">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="productModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close-modal aria-label="Cerrar">×</button>
+      <div class="modal-image-wrap" id="modalImageWrap">
+        <img id="modalImage" src="" alt="">
+        <span class="zoom-hint">⌕ Mueve el cursor para explorar</span>
+      </div>
+      <div class="modal-info">
+        <span class="modal-category" id="modalCategory"></span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <div class="detail-list">
+          <div><small>INGREDIENTES</small><span id="modalIngredients"></span></div>
+          <div><small>FORMATO</small><span id="modalFormat"></span></div>
+          <div><small>PRECIO</small><span id="modalPrice"></span></div>
+        </div>
+        <a href="#contacto" class="btn btn-dark modal-cta" data-close-modal>Consultar por este producto →</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
